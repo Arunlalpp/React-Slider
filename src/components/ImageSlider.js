@@ -25,7 +25,7 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
         {SliderData.map((slide, index) => { 
           return (
             <div 
-            className={index === current ? 'slide active' : 'slide'} key={index}>
+            className={index === current ?  'slide active' : 'slide'} key={index}>
               {index === current && (
                 
                 <img src={slide.image}  alt='travel image' className='image'/>
