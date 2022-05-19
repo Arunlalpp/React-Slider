@@ -6,12 +6,6 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
     
     const [current, setCurrent] = useState(0)
     const length = slides.length
-
-    const startSlider = () => {
-      slideInterval = setInterval(() => {
-        handleOnNextClick();
-      }, 3000);
-    };
   
     const nextSlide = () => {
       setCurrent(current === length - 1 ? 0 : current + 1)
